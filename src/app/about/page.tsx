@@ -1,21 +1,13 @@
-import RootLayout from "../layout";
-import styles from "./testpage.module.css";
+import styles from "./about.module.css";
 import Menu from "@/components/Menu";
 
-const Page = () => {
+const About = () => {
   return (
-    <>
+    <div className={styles.test}>
       <Menu isDark />
-      <div>g2111111</div>
-    </>
+      <div>About us</div>
+    </div>
   );
 };
 
-// export const getServerSideProps: GetServerSideProps = async (context) => {
-//   const theme = "dark";
-//   return {
-//     props: { theme },
-//   };
-// };
-
-export default Page;
+export default About;

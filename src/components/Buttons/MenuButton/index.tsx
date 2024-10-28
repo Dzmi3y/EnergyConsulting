@@ -1,28 +1,26 @@
 "use client";
 
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import styles from "./MenuButton.module.css";
 
 type Props = {
+  isDark?: boolean;
   text: string;
   onClick?: () => void;
 };
 
-const MenuButton = ({
-  onClick,
-  text,
-}: {
-  onClick: () => void;
-  text: string;
-}) => {
+const MenuButton = ({ onClick, text, isDark = false }: Props) => {
   const animationProps = {
     whileHover: { scale: 1.1 },
     whileTap: { scale: 0.9 },
   };
+  const buttonClass = `w-40 h-14 rounded-full ${
+    isDark ? styles.dark : styles.light
+  }`;
 
   return (
     <motion.button
-      className="w-40 h-14 rounded-full "
-      style={{ backgroundColor: "var(--accent100)", color: "var(--white)" }}
+      className={buttonClass}
       {...animationProps}
       onClick={onClick}
     >
