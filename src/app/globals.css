@@ -2,20 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: InterTightRegular;
+  src: url(./fonts/InterTight-Regular.ttf);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --white: #ffffff;
+  --light-gray: #f4f4f4;
+  --dark-gray: #a6a6ab;
+  --accent100: #212529;
+  --accent45: #424649;
+
+  --background: var(--white);
+  --foreground: var(--accent100);
+}
+
+[data-theme="dark"] {
+  --background: var(--accent100);
+  --foreground: var(--white);
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: InterTightRegular, sans-serif;
 }

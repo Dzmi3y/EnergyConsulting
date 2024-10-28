@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  vertical-align: middle;
+  margin-top: 30px;
+  color: var(--foreground);
+}
+
+.links-container {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  vertical-align: middle;
+  align-items: center;
+}
+
+/* a {
+  @apply hover:text-red-400;
+} */
