@@ -22,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interTightRegular.variable} mx-32`}>{children}</body>
+      <body className={`${interTightRegular.variable} mx-5 sm:mx-10 lg:mx-32`}>
+        {children}
+      </body>
     </html>
   );
 }
