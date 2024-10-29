@@ -5,6 +5,7 @@
   vertical-align: middle;
   margin-top: 30px;
   color: var(--foreground);
+  position: relative;
 }
 
 .links-container {
@@ -13,14 +14,3 @@
   vertical-align: middle;
   align-items: center;
 }
-
-.menu-button {
-  border-radius: 50%;
-  min-width: 48px;
-  min-height: 48px;
-  background-color: var(--dark-gray);
-}
-
-/* a {
-  @apply hover:text-red-400;
-} */

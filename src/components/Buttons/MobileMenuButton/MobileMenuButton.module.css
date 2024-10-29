@@ -1,0 +1,7 @@
+.menu-button {
+  border-radius: 50%;
+  min-width: 48px;
+  min-height: 48px;
+  background-color: var(--dark-gray);
+  z-index: 2;
+}
