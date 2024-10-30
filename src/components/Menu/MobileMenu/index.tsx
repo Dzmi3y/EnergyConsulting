@@ -7,8 +7,8 @@ import MobileMenuButton from "@/components/Buttons/MobileMenuButton";
 import styles from "./MobileMenu.module.css";
 
 const sidebar = {
-  open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 20px 20px)`,
+  open: (height = 480) => ({
+    clipPath: `circle(${height}px at 20px 20px)`,
     transition: {
       type: "spring",
       stiffness: 20,
@@ -16,7 +16,7 @@ const sidebar = {
     },
   }),
   closed: {
-    clipPath: "circle(10px at 480px  20px)",
+    clipPath: "circle(20px at 480px  20px)",
     transition: {
       delay: 0.1,
       type: "spring",
@@ -26,7 +26,7 @@ const sidebar = {
   },
 };
 
-const MobileMenu = () => {
+const MobileMenu = ({ contactUsOnClick }: { contactUsOnClick: () => void }) => {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
@@ -41,7 +41,7 @@ const MobileMenu = () => {
       <motion.nav className={styles.nav}>
         <MobileMenuButton toggle={() => toggleOpen()} />
         <motion.div className={styles.background} variants={sidebar} />
-        <Navigation />
+        <Navigation contactUsOnClick={contactUsOnClick} />
       </motion.nav>
     </motion.div>
   );

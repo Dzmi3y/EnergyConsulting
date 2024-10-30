@@ -2,8 +2,8 @@
 import React from "react";
 import styles from "./Menu.module.css";
 import { motion } from "framer-motion";
-import MenuButton from "../Buttons/MenuButton";
 import MobileMenu from "./MobileMenu";
+import DesktopMenu from "./DesktopMenu";
 
 const Menu = ({ isDark = false }: { isDark?: boolean }) => {
   const DARK_LOGO = "/images/logo_dark.png";
@@ -29,24 +29,11 @@ const Menu = ({ isDark = false }: { isDark?: boolean }) => {
           />
         </a>
       </div>
-      <div className={`hidden md:flex   ${styles["links-container"]}`}>
-        <motion.a {...linkAnimationProps} href="/about">
-          About us
-        </motion.a>
-        <motion.a {...linkAnimationProps} href="/services">
-          Services
-        </motion.a>
-        <motion.a {...linkAnimationProps} href="/portfolio">
-          Portfolio
-        </motion.a>
-        <MenuButton
-          isDark={isDark}
-          text="Contact us"
-          onClick={() => contactUsHandler()}
-        />
+      <div className={`hidden md:flex`}>
+        <DesktopMenu isDark={isDark} contactUsOnClick={contactUsHandler} />
       </div>
       <div className={`flex md:hidden`}>
-        <MobileMenu />
+        <MobileMenu contactUsOnClick={contactUsHandler} />
       </div>
     </nav>
   );

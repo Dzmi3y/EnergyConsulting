@@ -19,10 +19,7 @@ const variants = {
   },
 };
 
-const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
-
-export const MenuItem = ({ i }: { i: any }) => {
-  const style = { border: `2px solid ${colors[i]}` };
+export const MenuItem = ({ children }: { children: React.ReactNode }) => {
   return (
     <motion.li
       className={styles.li}
@@ -30,8 +27,7 @@ export const MenuItem = ({ i }: { i: any }) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <div className={styles["icon-placeholder"]} style={style} />
-      <div className={styles["text-placeholder"]} style={style} />
+      {children}
     </motion.li>
   );
 };

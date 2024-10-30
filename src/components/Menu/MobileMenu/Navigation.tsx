@@ -2,6 +2,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
 import styles from "./MobileMenu.module.css";
+import { routeNamesArray, RouteNamesEnum, routeTitles } from "@/data/route";
 
 const variants = {
   open: {
@@ -12,12 +13,30 @@ const variants = {
   },
 };
 
-export const Navigation = () => (
-  <motion.ul className={styles.ul} variants={variants}>
-    {itemIds.map((i) => (
-      <MenuItem i={i} key={i} />
-    ))}
-  </motion.ul>
-);
+export const Navigation = ({
+  contactUsOnClick,
+}: {
+  contactUsOnClick: () => void;
+}) => {
+  const linkAnimationProps = {
+    whileTap: { scale: 0.9 },
+  };
 
-const itemIds = [0, 1, 2, 3, 4];
+  return (
+    <motion.ul className={styles.ul} variants={variants}>
+      {routeNamesArray.map((r) => (
+        <MenuItem key={r}>
+          {r === RouteNamesEnum.CONTACTS ? (
+            <motion.button {...linkAnimationProps} onClick={contactUsOnClick}>
+              {routeTitles[r]}
+            </motion.button>
+          ) : (
+            <motion.a {...linkAnimationProps} href={r}>
+              {routeTitles[r]}
+            </motion.a>
+          )}
+        </MenuItem>
+      ))}
+    </motion.ul>
+  );
+};

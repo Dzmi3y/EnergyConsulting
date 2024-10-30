@@ -7,10 +7,3 @@
   color: var(--foreground);
   position: relative;
 }
-
-.links-container {
-  justify-content: end;
-  gap: 20px;
-  vertical-align: middle;
-  align-items: center;
-}
