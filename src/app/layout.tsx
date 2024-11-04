@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "normalize.css";
 import "./globals.css";
 import Menu from "@/components/Menu";
+import Footer from "@/components/Footer";
 
 const interTightRegular = localFont({
   src: "./fonts/InterTight-Regular.ttf",
@@ -22,8 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interTightRegular.variable} mx-5 sm:mx-10 lg:mx-32`}>
-        {children}
+      <body className={`${interTightRegular.variable} `}>
+        <div className="min-h-screen  mx-5 sm:mx-10 lg:mx-32">{children}</div>
+        <Footer />
       </body>
     </html>
   );
