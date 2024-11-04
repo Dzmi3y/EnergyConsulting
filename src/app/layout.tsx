@@ -23,7 +23,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interTightRegular.variable} `}>
+      <body className={`${interTightRegular.variable}`}>
+        <Menu />
         <div className="min-h-screen  mx-5 sm:mx-10 lg:mx-32">{children}</div>
         <Footer />
       </body>

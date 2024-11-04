@@ -4,17 +4,14 @@ import Menu from "@/components/Menu";
 export default function Home() {
   return (
     <>
-      <Menu />
-      <div>
-        <main></main>
-        {/* <Image
+      <main></main>
+      {/* <Image
               aria-hidden
               src="/globe.svg"
               alt="Globe icon"
               width={16}
               height={16}
             /> */}
-      </div>
     </>
   );
 }
