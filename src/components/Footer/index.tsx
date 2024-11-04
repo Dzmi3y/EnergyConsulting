@@ -12,8 +12,8 @@ const Footer = () => {
   return (
     <footer className={styles.container}>
       <div className="mx-5 sm:mx-10 lg:mx-32">
-        <div className="flex justify-between mb-10">
-          <div className="flex justify-between gap-40">
+        <div className="flex justify-between mb-10  flex-col gap-12 sm:gap-0 sm:flex-row">
+          <div className="flex justify-between flex-col items-start sm:flex-row gap-12  sm:gap-10 md:gap-14 lg:gap-24">
             <div className={styles.columnContainer}>
               <div className={styles.title}>Pages</div>
               {routeNamesArray.map((r) => (
@@ -24,7 +24,6 @@ const Footer = () => {
             </div>
             <div className={styles.columnContainer}>
               <div className={styles.title}>Social Media</div>
-
               <motion.a {...linkAnimationProps} href="">
                 Facebook
               </motion.a>
@@ -42,11 +41,13 @@ const Footer = () => {
               </motion.a>
             </div>
           </div>
-          <div>
+          <div className="flex justify-center sm:block">
             <img src="/images/footer.png" alt="" />
           </div>
         </div>
-        <div>Oakland -Energy Consulting ©</div>
+        <div className="text-center sm:text-left ">
+          Oakland -Energy Consulting ©
+        </div>
       </div>
     </footer>
   );

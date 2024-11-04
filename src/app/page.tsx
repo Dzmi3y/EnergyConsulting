@@ -6,12 +6,7 @@ export default function Home() {
     <>
       <Menu />
       <div>
-        <main>
-          {/* <div className="h-40">1</div>
-          <div className="h-40">2</div>
-          <div className="h-40">3</div>
-          <div className="h-40">4</div> */}
-        </main>
+        <main></main>
         {/* <Image
               aria-hidden
               src="/globe.svg"
