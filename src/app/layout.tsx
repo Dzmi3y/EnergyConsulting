@@ -1,15 +1,7 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "normalize.css";
 import "./globals.css";
-import Menu from "@/components/Menu";
 import Footer from "@/components/Footer";
-
-const interTightRegular = localFont({
-  src: "./fonts/InterTight-Regular.ttf",
-  variable: "--inter-tight-regular",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Energy Consulting",
@@ -23,8 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interTightRegular.variable}`}>
-        <div className="min-h-screen">{children}</div>
+      <body className="flex flex-col min-h-screen">
+        <div className="flex-grow">{children}</div>
         <Footer />
       </body>
     </html>
