@@ -28,3 +28,7 @@ body {
   background: var(--background);
   font-family: InterTightRegular, sans-serif;
 }
+
+.global-margins {
+  @apply mx-5 sm:mx-10 lg:mx-32;
+}

@@ -3,8 +3,9 @@ import Menu from "@/components/Menu";
 
 export default function Home() {
   return (
-    <>
-      <main></main>
+    <div>
+      <Menu />
+      <main className="global-margins"></main>
       {/* <Image
               aria-hidden
               src="/globe.svg"
@@ -12,6 +13,6 @@ export default function Home() {
               width={16}
               height={16}
             /> */}
-    </>
+    </div>
   );
 }
