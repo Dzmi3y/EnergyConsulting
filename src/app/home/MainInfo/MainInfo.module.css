@@ -1,4 +1,24 @@
 .container {
   color: var(--white);
   background-color: var(--accent100);
+  @apply flex flex-col;
+  @apply flex lg:justify-between lg:flex-row;
+}
+
+.title {
+  @apply text-5xl 2xl:text-6xl;
+}
+
+.description {
+  @apply text-lg max-w-xs mr-0;
+  @apply sm:text-xl sm:max-w-screen-sm sm:mr-3;
+  @apply md:text-2xl md:max-w-screen-md;
+  @apply lg:text-2xl lg:max-w-xs;
+  @apply xl:text-sm xl:max-w-md;
+  @apply 2xl:text-2xl 2xl:max-w-screen-md;
+}
+
+.info-container {
+  @apply flex flex-col gap-10 mb-16 justify-end min-h-[500px];
+  @apply h-screen pb-[50px] lg:h-auto lg:pb-0;
 }
