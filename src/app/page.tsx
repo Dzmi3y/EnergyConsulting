@@ -1,11 +1,14 @@
 import Menu from "@/components/Menu";
+import MainInfo from "./home/MainInfo";
 //import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
-      <Menu />
-      <main className="global-margins"></main>
+      <Menu isDark />
+      <main>
+        <MainInfo />
+      </main>
       {/* <Image
               aria-hidden
               src="/globe.svg"

@@ -4,17 +4,20 @@ import styles from "./Menu.module.css";
 import { motion } from "framer-motion";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
+import { RouteNamesEnum } from "@/data/route";
+import { useRouter } from "next/navigation";
 
 const Menu = ({ isDark = false }: { isDark?: boolean }) => {
   const DARK_LOGO = "/images/logo_dark.png";
   const LIGHT_LOGO = "/images/logo_light.png";
+  const router = useRouter();
 
   const linkAnimationProps = {
     whileHover: { scale: 1.1 },
     whileTap: { scale: 0.9 },
   };
   const contactUsHandler = () => {
-    console.log("contactUsHandler");
+    router.push(RouteNamesEnum.CONTACTS);
   };
 
   return (

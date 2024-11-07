@@ -32,3 +32,11 @@ body {
 .global-margins {
   @apply mx-5 sm:mx-10 lg:mx-32;
 }
+
+.global-left-margins {
+  @apply ml-5 sm:ml-10 lg:ml-32;
+}
+
+.global-right-margins {
+  @apply mr-5 sm:mr-10 lg:mr-32;
+}
