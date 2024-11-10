@@ -29,6 +29,19 @@ body {
   font-family: InterTightRegular, sans-serif;
 }
 
+h2 {
+  @apply text-4xl;
+}
+
+p {
+  @apply text-lg;
+  @apply sm:text-xl;
+  @apply md:text-2xl;
+  @apply lg:text-2xl;
+  @apply xl:text-sm;
+  @apply 2xl:text-2xl;
+}
+
 .global-margins {
   @apply mx-5 sm:mx-10 lg:mx-32;
 }

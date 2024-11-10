@@ -1,5 +1,6 @@
 import Menu from "@/components/Menu";
 import MainInfo from "./home/MainInfo";
+import AreasExpertise from "./home/AreasExpertise";
 //import Image from "next/image";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Menu isDark />
       <main>
         <MainInfo />
+        <AreasExpertise />
       </main>
       {/* <Image
               aria-hidden

@@ -10,10 +10,10 @@ const MainInfo = () => {
         <h1 className={styles.title}>
           Redefining <br /> Energy
         </h1>
-        <div className={styles.description}>
+        <p className={styles.description}>
           As market leaders for 20 years, we are experts in energy efficiency,
           providing tailored, concrete solutions to meet your needs.
-        </div>
+        </p>
         <ViewPortfolioButton text="View our Portfolio" />
       </div>
       <div className="max-h-[507px] overflow-hidden lg:max-h-none">

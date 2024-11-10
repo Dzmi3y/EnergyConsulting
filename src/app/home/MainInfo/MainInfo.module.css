@@ -10,12 +10,12 @@
 }
 
 .description {
-  @apply text-lg max-w-xs mr-0;
-  @apply sm:text-xl sm:max-w-screen-sm sm:mr-3;
-  @apply md:text-2xl md:max-w-screen-md;
-  @apply lg:text-2xl lg:max-w-xs;
-  @apply xl:text-sm xl:max-w-md;
-  @apply 2xl:text-2xl 2xl:max-w-screen-md;
+  @apply max-w-xs mr-0;
+  @apply sm:max-w-screen-sm sm:mr-3;
+  @apply md:max-w-screen-md;
+  @apply lg:max-w-xs;
+  @apply xl:max-w-md;
+  @apply 2xl:max-w-screen-md;
 }
 
 .info-container {

@@ -1,0 +1,23 @@
+.title {
+  color: var(--accent100);
+  @apply mt-24 lg:mt-36;
+}
+
+.description {
+  color: var(--accent100);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  @apply max-w-4xl;
+  @apply xl:max-w-xl;
+  @apply 2xl:max-w-4xl;
+}
+
+.scroll_container {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100vw;
+}
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
