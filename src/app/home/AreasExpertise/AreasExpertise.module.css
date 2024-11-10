@@ -1,6 +1,6 @@
 .title {
   color: var(--accent100);
-  @apply mt-24 lg:mt-36;
+  @apply mt-24 lg:mt-28;
 }
 
 .description {
@@ -12,12 +12,20 @@
   @apply 2xl:max-w-4xl;
 }
 
-.scroll_container {
-  overflow-y: scroll;
+.scroll-container {
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  width: 100vw;
+  scroll-behavior: smooth;
+  @apply flex gap-7;
 }
+
+.image {
+  @apply flex-none lg:flex-1;
+  scroll-snap-align: start;
+}
+
 .scroll-container::-webkit-scrollbar {
   display: none;
 }

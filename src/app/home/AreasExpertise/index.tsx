@@ -12,40 +12,38 @@ const AreasExpertise = () => {
         innovative energy future.
       </p>
       <div className={styles["scroll-container"]}>
-        <div className={`global-margins flex gap-7 w-[1600]`}>
-          <Image
-            aria-hidden
-            className="flex-none lg:flex-1"
-            src="/images/home/expertise_image_1.png"
-            alt="expertise_image_1.png"
-            width="313"
-            height="375"
-          />
-          <Image
-            aria-hidden
-            className="flex-none lg:flex-1"
-            src="/images/home/expertise_image_2.png"
-            alt="expertise_image_2.png"
-            width="313"
-            height="375"
-          />
-          <Image
-            aria-hidden
-            className="flex-none lg:flex-1"
-            src="/images/home/expertise_image_3.png"
-            alt="expertise_image_3.png"
-            width="313"
-            height="375"
-          />
-          <Image
-            aria-hidden
-            className="flex-none lg:flex-1"
-            src="/images/home/expertise_image_4.png"
-            alt="expertise_image_4.png"
-            width="313"
-            height="375"
-          />
-        </div>
+        <Image
+          aria-hidden
+          className={`global-left-margins ${styles.image}`}
+          src="/images/home/expertise_image_1.png"
+          alt="expertise_image_1.png"
+          width="313"
+          height="375"
+        />
+        <Image
+          aria-hidden
+          className={styles.image}
+          src="/images/home/expertise_image_2.png"
+          alt="expertise_image_2.png"
+          width="313"
+          height="375"
+        />
+        <Image
+          aria-hidden
+          className={styles.image}
+          src="/images/home/expertise_image_3.png"
+          alt="expertise_image_3.png"
+          width="313"
+          height="375"
+        />
+        <Image
+          aria-hidden
+          className={`global-right-margins ${styles.image}`}
+          src="/images/home/expertise_image_4.png"
+          alt="expertise_image_4.png"
+          width="313"
+          height="375"
+        />
       </div>
       <p className={`global-margins ${styles.description}`}>
         Leading the market for two decades, we have been experts in energy
