@@ -1,0 +1,17 @@
+.info-container {
+  @apply max-w-xl;
+  @apply lg:max-w-sm;
+  @apply xl:max-w-xl;
+  @apply 2xl:max-w-3xl;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: var(--accent100);
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-top: 40px;
+}

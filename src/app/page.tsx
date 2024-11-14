@@ -2,6 +2,7 @@ import Menu from "@/components/Menu";
 import MainInfo from "./home/MainInfo";
 import AreasExpertise from "./home/AreasExpertise";
 import DetailedInfo from "./home/DetailedInfo";
+import ContactBlock from "./home/ContactBlock";
 //import Image from "next/image";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <MainInfo />
         <AreasExpertise />
         <DetailedInfo />
+        <ContactBlock />
       </main>
     </div>
   );

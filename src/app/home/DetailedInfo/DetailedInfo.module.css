@@ -5,8 +5,6 @@
 
 .info-container {
   @apply max-w-xl;
-  @apply sm:max-w-xl;
-  @apply md:max-w-xl;
   @apply lg:max-w-sm lg:pl-[40];
   @apply xl:max-w-xl xl:pl-0;
   @apply 2xl:max-w-3xl;
@@ -15,7 +13,7 @@
 .description {
   color: var(--accent100);
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .title {
