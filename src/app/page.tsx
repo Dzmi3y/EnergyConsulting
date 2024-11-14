@@ -1,6 +1,7 @@
 import Menu from "@/components/Menu";
 import MainInfo from "./home/MainInfo";
 import AreasExpertise from "./home/AreasExpertise";
+import DetailedInfo from "./home/DetailedInfo";
 //import Image from "next/image";
 
 export default function Home() {
@@ -10,14 +11,8 @@ export default function Home() {
       <main>
         <MainInfo />
         <AreasExpertise />
+        <DetailedInfo />
       </main>
-      {/* <Image
-              aria-hidden
-              src="/globe.svg"
-              alt="Globe icon"
-              width={16}
-              height={16}
-            /> */}
     </div>
   );
 }
