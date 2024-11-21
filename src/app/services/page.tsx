@@ -2,6 +2,8 @@ import Menu from "@/components/Menu";
 import React from "react";
 import styles from "./services.module.css";
 import Accordion from "./accordion";
+import Image from "next/image";
+import ViewPortfolioButton from "./ViewPortfolioButton";
 
 const Services = () => {
   return (
@@ -41,6 +43,29 @@ const Services = () => {
           <Accordion name="accordion" summary="Consulting">
             <p>Lorem ipsum dolor sit amet consectetur.</p>
           </Accordion>
+          <div className={styles["image-container"]}>
+            <div className={styles["image-description-container"]}>
+              <div>Sustainable energy consulting</div>
+              <div>Portugal. 2023</div>
+            </div>
+            <Image
+              aria-hidden
+              className={styles["energy-image"]}
+              src="/images/services/energy_image.png"
+              alt="Energy image"
+              width="778"
+              height="573"
+            />
+          </div>
+          <div className={`global-margins ${styles["info-container"]}`}>
+            <h2 className={styles.subtitle}>Proudly helping businesses</h2>
+            <p className={styles.description}>
+              Explore our portfolio of remarkable projects where innovation and
+              sustainability converge. Discover how we've transformed energy
+              landscapes and elevated standards in the industry.
+            </p>
+            <ViewPortfolioButton />
+          </div>
         </div>
       </main>
     </>

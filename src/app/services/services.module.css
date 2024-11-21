@@ -50,8 +50,46 @@
 
 .arrowImage {
   transition-duration: 0.3s;
+  width: 25px;
+  height: 30px;
 }
 
 .accordion-details[open] .arrowImage {
   transform: rotate(90deg);
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  @apply lg:flex-row lg:justify-end lg:items-start;
+}
+.energy-image {
+  @apply mt-[40] mb-[20] w-[578];
+  @apply xl:w-[778];
+  @apply lg:mb-0;
+}
+.image-description-container {
+  color: var(--dark-gray);
+  font-size: 14px;
+  text-align: center;
+  @apply lg:text-end lg:mr-[20] lg:mt-auto;
+}
+
+.info-container {
+  @apply max-w-xl;
+  @apply lg:max-w-sm;
+  @apply xl:max-w-xl;
+  @apply 2xl:max-w-3xl;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: var(--accent100);
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  margin-top: 40px;
 }
